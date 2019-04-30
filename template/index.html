@@ -6,15 +6,14 @@
     <meta name="keywords" content="РВД-сервис">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body class="body">
         <div class=“header__logo”>
            <img  src="img/logo.PNG" alt="РВД Сервис лого">
-        </div>
         <div class="header__registration">
             <ul class="navigation__list">
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">Регистрация</a></li>
+                    <span class="contacts__separator">|</span>
                     <li class="navigation__item"> <a href="#" class="navigation_link">Вход</a>
                     </ul>
                 </div> 
@@ -23,6 +22,7 @@
                     <input type="submit" value="Поиск"></p>
         </div>
         <div class="header__contacts"><a href="tel:+7(4872)58-40-59">+7(4872)58-40-59</a>
+            <span class="contacts__separator">|</span>
             <a href="link:info@rvd-servis.ru">info@rvd-servis.ru</a>
         </div>
         <button class=header__callback>
@@ -38,71 +38,75 @@
                 <a href="#" class="navigation__link">Каталог товаров</a>
             </li>
                 <a href="#" class="navigation__link" class="navigation__item">
-                    <a href="#" class="navigation__link">О компании</li>
+                    <a href="#" class="navigation__link">О компании</a></li>
             <li class="navigation__item">
-                    <a href="#" class="navigation__link">РВД-Сервис (УСЛУГИ)</li>
+                    <a href="#" class="navigation__link">РВД-Сервис (УСЛУГИ)</a></li>
             <li class="navigation__item">
-                    <a href="#" class="navigation__link">Информация</li>
+                    <a href="#" class="navigation__link">Информация</a></li>
             <li class="navigation__item">
-                    <a href="#" class="navigation__link">Контакты</li> 
+                    <a href="#" class="navigation__link">Контакты</a></li>
                     </ul>
                 </nav>
-    </header>
-    <div class=banner> <img src="img/banner.png" alt="banner"> </div>
-    <section class="services">
-            <header class="services__title">
-                <div class=servises_text>
-                    <p>ПРОИЗВОДСТВО И РЕМОНТ</p>
-                    <p>РВД ДЛЯ ГРУЗОВЫХ </p> 
-                    <p>АВТОМОБИЛЕЙ</p>
-                    </div>
-                <h2>НАШИ УСЛУГИ</h2>
             </header>
+   
+    <div class=banner> <img src="img/banner.jpg" alt="banner"> </div>
+            <main class="services__title">
+                <div class=servises_text>
+                    <h2>ПРОИЗВОДСТВО И РЕМОНТ</h2><br>
+                    <h2>РВД ДЛЯ ГРУЗОВЫХ</h2> <br> 
+                    <h2>АВТОМОБИЛЕЙ</h2><br>
+                    </div>
+                
+                <h2>НАШИ УСЛУГИ</h2>
+            </main>
+            
+            <section>
             <a href="#" class="services__item">
                     <span class="services__image">
-                        <img src="" alt="">
+                        <img src="img/passenger_cars.png" alt="для легковые автомобилей">
                     </span>
 
                     <span class="services__name">РВД для легковых автомобилей</span>
                 </a>
                 <a href="#" class="services__item">
                     <span class="services__image">
-                        <img src="" alt="">
+                        <img src="img/truck.png" alt="для грузовых автомобилей">
                     </span>
                     <span class="services__name">РВД для грузовых автомобилей</span>
                 </a>
                 <a href="#" class="services__item">
                     <span class="services__image">
-                        <img src="" alt="">
+                        <img src="img/washing.png" alt="для моек высокого давления">
                     </span>
-                    <span class="services__name">РВД для моей высокого давления</span>
+                    <span class="services__name">РВД для моек высокого давления</span>
                 </a>
                 <a href="#" class="services__item">
                     <span class="services__image">
-                        <img src="" alt="">
+                        <img src="img/tractor.png" alt="для коммунальной техники">
                     </span>
                     <span class="services__name">РВД для коммунальной техники</span>
                 </a>
                 <a href="#" class="services__item">
                         <span class="services__image">
-                            <img src="" alt="">
+                            <img src="img/equipment.png" alt="для станков и оборудования">
                         </span>
                         <span class="services__name">РВД для станков и оборудования</span>
                     </a>
                     <a href="#" class="services__item">
                             <span class="services__image">
-                                <img src="" alt="">
+                                <img src="img/canal_flushing.png" alt="для каналопромывочных машин">
                             </span>
                             <span class="services__name">РВД для каналопромывочных машин</span>
                         </a>
             </section>
+        
             <div> Компания "РВД-Сервис" длительное время успешно занимается производством, 
                 а также ремонтом рукавов высокого давления (РВД) и труб высокого давления (ТВД) </div>
-                <div>
+                <div> 
                     <h3>ПОПУЛЯРНЫЕ ТОВАРЫ</h3>
                 </div>
             <div class='index-card__item'>
-                <div class='index-card__item-price1'>
+                <div class='index-card__item-price'>
                         <h4>Адаптеры 201,202(BSP 60 &#176;)</h4>
                         <img src="img/adapter1.png" alt="адаптеры 201,202-1"> <br>
                         <p>Соединение: внешняя резьба BSPP.</p> <br>
@@ -114,7 +118,7 @@
                                 <button>Подробнее&#8594</button>
                               </form>
                               </div>
-                            <div class='index-card__item-price2'>
+                            <div class='index-card__item-price'>
                             <h4>Героторные гидромоторы BMR</h4> <br>
                             <img src="img/adapter2.png" alt="гидромоторы BMR">  <br>
                             <p>Диапазон рабочих температур: от -30&#176С до +90&#176C.</p> <br>
@@ -125,7 +129,7 @@
                                     <button>Подробнее&#8594</button>
                                   </form>
                                 </div>
-                                    <div class='index-card__item-price3'>
+                                    <div class='index-card__item-price'>
                             <h4>Адаптеры 201,202(BSP 60 &#176;)</h4> <br>
                             <img src="img/adapter3.png" alt="адаптеры 201,202-2">  <br>
                             <p>Материал:</p> <br>
@@ -139,7 +143,7 @@
                                         <button> Подробнее&#8594</button>
                                       </form>
                                     </div>
-                           <div class='index-card__item-price4'>
+                           <div class='index-card__item-price'>
                                     <h4>Адаптеры 201,202(BSP 60 &#176;)</h4> <br>
                                     <img src="img/adapter4.png" alt="адаптеры 201,202-3">  <br>
                                     <p>Соединение: внешняя резьба BSPP</p> <br>
@@ -171,6 +175,7 @@
                                         </nav>
                         <div class="footer__contacts contacts">
                                 <a href="tel:+7(4872)58-40-59">+7(4872)58-40-59</a>
+                                <span class="contacts__separator">|</span>
                                 <a href="info@rvd-servis.ru">info@rvd-servis.ru</a>
                             </div>
                             <div class=upstairs>
