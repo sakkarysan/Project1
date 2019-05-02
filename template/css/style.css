@@ -40,7 +40,7 @@ body {
     top: 0;
 }
 .container {
-    /* max-width:  */
+    max-width:1655px ;
     margin: 0 auto;
     padding: 0px 15px;
 }
@@ -74,6 +74,24 @@ align-items: center;
 flex-direction: column;
 justify-content: space-between;
 }
-
-
+.index-banner {
+    min-height: 800px;
+    max-width: 900px;
+    text-transform: uppercase
+}
+.container_big {
+    max-width: 1920px;
+}
+.navigation__sublist {
   
+    text-decoration: none; 
+    color: #666; 
+    border: 1px solid #ccc;
+    background-color: #f0f0f0; 
+    border-bottom: none; 
+}
+.navigation__item_parent:hover {
+  
+    display:block;
+  
+}
