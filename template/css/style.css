@@ -17,7 +17,6 @@ body {
     padding: 0;
     margin: 0;
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -30,21 +29,66 @@ body {
     caret-color: #bf0000;
     background-color: #fff;
 }
-.header {
-    width: 100%;
-    padding-top: 38px;
-    background-color: white;
-    z-index: 11;
-    position: absolute;
-    left: 0;
-    top: 0;
+a { 
+    text-decoration: none;
 }
-.container {
-    max-width:1655px ;
-    margin: 0 auto;
-    padding: 0px 15px;
+h1 h2 {
+    font-family: "Mullerbold", sans-serif;
+    font-weight: bold;
+    line-height: inherit;
 }
+h1 {
+    padding: 50px;
+    color:white;
+    font-size: 30px;
+    line-height: normal;
+}
+h2{
+    padding: 50px;
+    color:red;
+    font-size: 30px;
+    line-height: normal;
+}
+p {
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    padding: 10px;
+  }
 
+  section {
+    position: relative;
+    padding: 100px 0;
+  }
+  .main{
+        background-image: url(../images/banner.jpg);
+        background-position: center;
+  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: red;
+  font-family: "Mullerbold";
+  background: #fff;
+}
+a:hover, a:active, a:focus {
+    color: #bd0e48;
+    outline: none;
+  }
+.header__top {
+display: flex; 
+align-items: center;
+padding: 20px;
+
+}
+.header__bottom li{
+display: flex; 
+align-items: center;
+padding: 20px;
+flex-wrap: space-between;
+}
 img {
         max-height: 100%;
         max-width: 100%;
@@ -56,11 +100,12 @@ button {
     cursor: pointer;
 }
 .services__item {
-    background-color: grey;
-    width: 200px;
-    /* Стараться избегать фиксированных ширины и высоты, за исключением некоторых картинок и иконок. */
-height: 50px;
-border: 1px solid black;
+display:flex;
+flex-basis: 200px;
+background-color: rgb(211, 211, 211);
+width: calc(100%/6);
+height: calc(100%/3);
+border: 1px solid rgb(153, 153, 153);
 display: inline-block;
 list-style: none; 
 }
@@ -69,21 +114,13 @@ display: flex;
 list-style: none; 
 width: calc(100%/4);
 height: 250px;
-/* Стараться избегать фиксированных ширины и высоты, за исключением некоторых картинок и иконок. */
 align-items: center;
 flex-direction: column;
 justify-content: space-between;
 }
-.index-banner {
-    min-height: 800px;
-    max-width: 900px;
-    text-transform: uppercase
-}
-.container_big {
-    max-width: 1920px;
-}
+
 .navigation__sublist {
-  
+    display:none;
     text-decoration: none; 
     color: #666; 
     border: 1px solid #ccc;
@@ -95,3 +132,45 @@ justify-content: space-between;
     display:block;
   
 }
+footer{
+    display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: "Mullerbold";
+  background: #fff;
+}
+.footer__top{
+    display:flex;
+    justify-content: center ;
+}
+.footer__bottom{
+    display:flex;
+    text-align: justify
+}
+.footer__item{
+    display:flex;
+    justify-content: center;
+    width:100px
+}
+.footer__icon {
+    width: 211px;
+    height: 183px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 16px;
+  }
+ .common-button {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.856);
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(255, 0, 0);
+    transition: 0.2s;
+  } 
+  .common-button { background: red; }
+  .common-button {
+    background: red;
+    
+  }
